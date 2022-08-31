@@ -1,11 +1,6 @@
 {
-    "PrimerProducto": {
-        "nombreProducto": "White Pants",
-        "precioProducto": 20
-    },
-    "SegundoProducto": 
-    {
-        "nombreProducto": "White Pants",
-        "precioProducto": 20
-    }
+    "primernombreProducto": "White Pants",
+    "primeroprecioProducto": 20,
+    "nombreProducto": "White Pants",
+    "precioProducto": 20
 }

@@ -14,7 +14,7 @@ describe('Asersiones', () => {
         cy.get("#user").type(datosLogin.usuario);
         cy.get("#pass").type(datosLogin.contraseña);
         cy.xpath("//button[contains(text(), 'Log in')]").click();
-        cy.get(`[id*='user_${datosLogin.usuario}_']`).should("be.visible")
+        cy.get(`[id*='user_${datosLogin.usuario}_']`, {timeout:11000}).should("be.visible")
         cy.get("a#waitslink").click();
     })
 
@@ -64,11 +64,11 @@ describe('Asersiones', () => {
 
     it('Validando que el boton tenga atributo nombre valor wait', () => {
         cy.get("#wait").invoke("attr", "name").then(name =>{
-            expect(name).equal("wait");
+            expect(name).equal("waits");
         })
     });
 
-    it.only('Validando que el boton tenga atributo nombre valor wait sin usar invoke', () => {
+    it('Validando que el boton tenga atributo nombre valor wait sin usar invoke', () => {
         cy.get("#wait").should("have.attr", "name", "wait");
     });
 })
