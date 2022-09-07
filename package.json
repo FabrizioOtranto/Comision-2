@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@applitools/eyes-cypress": "^3.27.1",
     "cypress": "^10.3.0",
     "cypress-xpath": "^2.0.1",
     "mochawesome": "^7.1.3",

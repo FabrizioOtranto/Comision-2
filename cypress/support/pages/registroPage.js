@@ -1,4 +1,4 @@
-export class RegistroPage {
+ export class RegistroPage {
 
     constructor(){
         this.iniciarSesionButton = "#registertoggle"
@@ -7,5 +7,4 @@ export class RegistroPage {
     clickIniciarSesionButton(){
         cy.get(this.iniciarSesionButton).dblclick();
     };
-
 }

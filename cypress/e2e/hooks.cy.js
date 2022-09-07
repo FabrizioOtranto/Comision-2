@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+
 describe('Hooks', () => {
     let usuario, contraseña;
 
@@ -20,8 +21,8 @@ describe('Hooks', () => {
         cy.xpath("//button[contains(text(), 'Log in')]").click();
         cy.get(`[id*='user_${usuario}_']`).should("be.visible")
     });
-
-    it('Segundo test', () => {
+    
+    xit('Segundo test', () => {
         cy.get("#user").type(usuario);
         cy.get("#pass").type(contraseña);
         cy.xpath("//button[contains(text(), 'Log in')]").click();

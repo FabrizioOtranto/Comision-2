@@ -17,3 +17,6 @@ module.exports = defineConfig({
     json: true
   }
 });
+
+
+require('@applitools/eyes-cypress')(module);

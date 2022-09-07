@@ -3,11 +3,11 @@
 import { RegistroPage } from "../support/pages/registroPage"
 import { LoginPage } from "../support/pages/loginPage"
 import { Navbar } from "../support/pages/navbar"
-import { TodoListPage } from "../support/pages/todoListPage"
+import { TodoListPage }  from "../support/pages/todoListPage"
 import { HomePage } from "../support/pages/homePage"
 
 describe('Page object model', () => {
-    let datosLogin, tarea1, tarea2;
+    let  datosLogin, tarea1, tarea2;
     const registroPage = new RegistroPage();
     const loginPage = new LoginPage();
     const navbar = new Navbar();
