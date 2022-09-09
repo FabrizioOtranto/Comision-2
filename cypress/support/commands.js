@@ -27,3 +27,11 @@
 Cypress.Commands.add("esperaBarraDeCarga", () => {
     cy.get("[role='progressbar']", {timeout:11000}).should("not.exist")
 })
+
+Cypress.Commands.add("component", (nombre) =>{
+    cy.window().then( $win => {
+        const component = nombre === 'root' ? $win.app : $win.app.$children.find(key => key.$vnode.tag.includes(nombre))
+
+        return component
+    })
+})
