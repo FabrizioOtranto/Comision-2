@@ -41,12 +41,14 @@ describe('Desafio-4', () => {
             }).then(response =>{
                 cy.request({
                     method: "DELETE",
-                    url: "https://pushing-it-backend.herokuapp.com/api/delete/"+response.body.user.username,
-                    failOnStatusCode: false
+                    url: `https://pushing-it-backend.herokuapp.com/api/deleteuser/${response.body.user.username}`,
                 }).then(response=>{
-                    expect(response.status).to.equal(404);
+                    cy.log(response)
+                    expect(response.status).to.equal(200);
                 })
             })
         })
-    })
+    })   
 })
+
+
