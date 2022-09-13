@@ -1,6 +1,6 @@
 describe('Desafio4', () => {
 
-  it("Deberia registrarse, ingresar y luego eliminar el usuario", () => {
+  it("Deberia registrarse, ingresar y luego eliminar el usuario!", () => {
     const user = "kevin" + Math.floor(Math.random() * 10000);
     const pass = "123456!";
 
